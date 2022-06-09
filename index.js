@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs =require('fs');
-const filename = `NEWREADME.md`;
+const filename = 'README.md';
 
 var questions = ['What is the Title?', 'Please provide a description','Please provide installation instructions', 'Please provide usage information', 'Please provide contribution guidelines', 'Please provide test instructions','What is your email address','What is your Github link', 'Which license would you like to include?'];
 
@@ -83,13 +83,13 @@ function init() {
 `${licenseBadge}
 # ${data.title}
 ## Table of Contents
-1. [Description](#Description)
-2. [Installation](#Installation)
-3. [Usage](#Usage)
-4. [Contribution](#Contribution)
-5. [Tests](#Tests)
-6. [Questions](#Questions)
-7. [License](#License)
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#ssage)
+4. [Contribution](#contribution)
+5. [Tests](#tests)
+6. [Questions](#questions)
+7. [License](#license)
 
 <a name="description"></a>
 ## Description 
