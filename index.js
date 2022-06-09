@@ -1,15 +1,19 @@
+// Import Libraries
 const inquirer = require('inquirer');
 const fs =require('fs');
 const filename = 'README.md';
 
+// Questins Array
 var questions = ['What is the Title?', 'Please provide a description','Please provide installation instructions', 'Please provide usage information', 'Please provide contribution guidelines', 'Please provide test instructions','What is your email address','What is your Github link', 'Which license would you like to include?'];
 
+// Function to Create and Write to a New File
 function writeToFile(data) {
     fs.writeFile(filename, data, (err) =>
       err ? console.log(err) : console.log('Congratulations, your README as successfully created')
     );
 }
 
+// Function to Run Program
 function init() {
   inquirer
   .prompt([
@@ -115,4 +119,5 @@ This README is under the following license:  ${data.license}
   });
 }
 
+// Call Run Function
 init();
