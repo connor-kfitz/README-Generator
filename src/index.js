@@ -9,7 +9,7 @@ var questions = ['What is the Title?', 'Please provide a description','Please pr
 // Function to Create and Write to a New File
 function writeToFile(data) {
     fs.writeFile(filename, data, (err) =>
-      err ? console.log(err) : console.log('Congratulations, your README as successfully created')
+      err ? console.log(err) : console.log('Congratulations, your README was successfully created')
     );
 }
 
@@ -89,13 +89,12 @@ function init() {
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
-3. [Usage](#ssage)
+3. [Usage](#usage)
 4. [Contribution](#contribution)
 5. [Tests](#tests)
 6. [Questions](#questions)
 7. [License](#license)
 
-<a name="description"></a>
 ## Description 
 ${data.description}
 ## Installation
